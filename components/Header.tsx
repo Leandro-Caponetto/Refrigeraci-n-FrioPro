@@ -120,18 +120,20 @@ const Header = () => {
             className="bg-white rounded-2xl shadow-2xl p-12 max-w-lg w-full relative flex flex-col items-center mx-2 border-2 border-white-600 rounded-xl"
             style={{ minHeight: "320px" }}
             onClick={(e) => e.stopPropagation()}>
-            <h2 className="text-2xl font-bold text-brand-blue text-center mb-6">
+            <h2 className="text-2xl font-bold text-brand-blue text-center mb-2">
               Info
             </h2>
+            <div className="bg-brand-gray-light p-2 rounded-2xl shadow-2xl mb-2 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
+              <p className="text-2xl font-bold text-brand-gray-dark  text-center">
+                ❄️ Frío
+                <span
+                  className="bg-brand-blue-dark text-white rounded-lg"
+                  style={{ backgroundColor: "#fda17a" }}>
+                  Pro
+                </span>
+              </p>
+            </div>
 
-            <p className="text-2xl font-bold text-brand-gray-dark mb-3 text-center">
-              ❄️ Frío
-              <span
-                className="bg-brand-blue-dark text-white rounded-lg"
-                style={{ backgroundColor: "#fda17a" }}>
-                Pro
-              </span>
-            </p>
             <div className="bg-brand-gray-light  mb-2 rounded-2xl shadow-2xl p-6 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
               <div className="mb-4 text-lg w-full text-center">
                 <span className="font-semibold">☎️ Teléfono:</span>{" "}

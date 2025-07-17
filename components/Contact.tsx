@@ -5,6 +5,7 @@ import React, { useState } from "react";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const recipientEmail = "caponettopeppers@gmail.com";
@@ -44,7 +45,10 @@ const Contact = () => {
         </div>
 
         <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            className="space-y-6"
+            action="https://formsubmit.co/187443012129310e76eaf2d9b5f6fd79"
+            method="POST">
             <div>
               <label
                 htmlFor="name"
@@ -81,6 +85,23 @@ const Contact = () => {
             </div>
             <div>
               <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-brand-gray">
+                Tu telefono
+              </label>
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+                className="mt-1 block w-full px-4 py-3 bg-brand-gray-light/50 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-brand-blue"
+                placeholder="1234567890"
+              />
+            </div>
+            <div>
+              <label
                 htmlFor="message"
                 className="block text-sm font-medium text-brand-gray">
                 Mensaje
@@ -101,6 +122,12 @@ const Contact = () => {
                 className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-lg text-base font-medium text-white bg-brand-blue hover:bg-brand-blue-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue transition-all duration-300">
                 Enviar Mensaje
               </button>
+              <input
+                type="hidden"
+                name="_next"
+                value={"https://refrigeraci-n-frio-pro.vercel.app/"}
+              />
+              <input type="hidden" name="_captcha" value={"false"} />
             </div>
           </form>
         </div>
