@@ -45,7 +45,9 @@ const Header = () => {
             <p className="text-2xl md:text-5xl">❄️</p>
             <p className="text-2xl font-bold text-brand-gray-dark">
               Frío
-              <span className="bg-brand-blue-dark text-white rounded-lg">
+              <span
+                className=" text-white rounded-lg"
+                style={{ backgroundColor: "#fda17a" }}>
                 Pro
               </span>
             </p>
@@ -124,7 +126,9 @@ const Header = () => {
 
             <p className="text-2xl font-bold text-brand-gray-dark mb-3 text-center">
               ❄️ Frío
-              <span className="bg-brand-blue-dark text-white rounded-lg">
+              <span
+                className="bg-brand-blue-dark text-white rounded-lg"
+                style={{ backgroundColor: "#fda17a" }}>
                 Pro
               </span>
             </p>

@@ -11,10 +11,15 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               {/* <LogoIcon className="h-8 w-8 text-brand-blue-dark" /> */}
-              <h1 className="text-4xl md:text-5xl">❄️</h1>
-              <span className="text-2xl font-bold text-brand-gray">
-                FríoPro
-              </span>
+              <p className="text-2xl md:text-5xl">❄️</p>
+              <p className="text-2xl font-bold text-brand-gray">
+                Frío
+                <span
+                  className=" text-white rounded-lg"
+                  style={{ backgroundColor: "#fda17a" }}>
+                  Pro
+                </span>
+              </p>
             </div>
             <p className="text-brand-gray">
               Tu asistente experto en climatización. Diagnósticos rápidos y

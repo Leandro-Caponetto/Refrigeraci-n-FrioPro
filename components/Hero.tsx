@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="mt-16 max-w-5xl mx-auto">
           <p className="text-2xl md:text-2xl font-extrabold text-brand-gray-dark mb-4 leading-tight">
             Aires acondicionados,{" "}
-            <span className="text-brand-blue">split ❄️.</span>
+            <span className="text-brand-blue">split.</span>
           </p>
           <img
             src="https://media.istockphoto.com/id/2058341644/es/foto/mantenimiento-y-reparaci%C3%B3n-de-aires-acondicionados-t%C3%A9cnico-de-servicio-de-hvac-en-el-trabajo.jpg?s=612x612&w=0&k=20&c=OSsYB3TefH712JAn9mz8rD6f6ruhAyf3Wo7a2brD6pA="
