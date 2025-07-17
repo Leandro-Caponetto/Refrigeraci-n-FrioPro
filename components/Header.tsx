@@ -115,32 +115,38 @@ const Header = () => {
           className="fixed inset-0 z-50 grid place-items-center bg-black/40"
           onClick={() => setShowInfo(false)}>
           <div
-            className="bg-white rounded-2xl shadow-2xl p-12 max-w-lg w-full relative flex flex-col items-center mx-4"
+            className="bg-white rounded-2xl shadow-2xl p-12 max-w-lg w-full relative flex flex-col items-center mx-2 border-2 border-white-600 rounded-xl"
             style={{ minHeight: "320px" }}
             onClick={(e) => e.stopPropagation()}>
-            <h2 className="text-2xl font-bold mb-4 text-brand-blue text-center">
+            <h2 className="text-2xl font-bold text-brand-blue text-center mb-6">
               Info
             </h2>
-            <h3 className="font-bold text-lg text-brand-gray-dark  mb-6">
-              ❄️ FríoPro
-            </h3>
-            <div className="mb-4 text-lg w-full text-center">
-              <span className="font-semibold">Teléfono:</span>{" "}
-              <a href="tel:1161691727" className="text-brand-blue underline">
-                1161691727
-              </a>
-            </div>
-            <div className="mb-8 text-lg w-full text-center">
-              <span className="font-semibold">Email:</span>{" "}
-              <a
-                href="mailto:contacto@friopro.com"
-                className="text-brand-blue underline">
-                contacto@friopro.com
-              </a>
+
+            <p className="text-2xl font-bold text-brand-gray-dark mb-3 text-center">
+              ❄️ Frío
+              <span className="bg-brand-blue-dark text-white rounded-lg">
+                Pro
+              </span>
+            </p>
+            <div className="bg-brand-gray-light  mb-2 rounded-2xl shadow-2xl p-6 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
+              <div className="mb-4 text-lg w-full text-center">
+                <span className="font-semibold">☎️ Teléfono:</span>{" "}
+                <a href="tel:1161691727" className="text-brand-blue underline">
+                  1161691727
+                </a>
+              </div>
+              <div className="mb-4 text-lg w-full text-center">
+                <span className="font-semibold">📧 Email:</span>{" "}
+                <a
+                  href="mailto:contacto@friopro.com"
+                  className="text-brand-blue underline">
+                  contacto@friopro.com
+                </a>
+              </div>
             </div>
             <button
               onClick={() => setShowInfo(false)}
-              className="mt-2 bg-brand-blue text-white font-bold py-2 px-8 rounded-lg hover:bg-brand-blue-dark transition-all duration-300"
+              className="mt-2 bg-brand-blue text-white font-bold py-2 px-8 rounded-lg shadow-2xl hover:bg-brand-blue-dark transition-all duration-300 "
               type="button">
               Cerrar
             </button>

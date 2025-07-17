@@ -114,7 +114,7 @@ const Chatbox = () => {
                 }`}>
                 {msg.role === "model" && (
                   <div className="flex-shrink-0 h-8 w-8 rounded-full bg-brand-gray-dark flex items-center justify-center text-white font-bold text-sm">
-                    IA
+                    🤖
                   </div>
                 )}
                 <div
