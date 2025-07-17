@@ -28,6 +28,51 @@ function App() {
         <Contact />
         {/* <WhatsAppButton /> */}
       </main>
+
+      {/* Barra inferior tipo app solo en móvil */}
+      <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-lg flex justify-around items-center py-2 md:hidden z-50">
+        <a
+          href="#features"
+          className="flex flex-col items-center text-xs text-brand-gray-dark hover:text-brand-blue">
+          <span className="material-icons" style={{ fontSize: 24 }}>
+            apps
+          </span>
+          Funciones
+        </a>
+        <a
+          href="#how-it-works"
+          className="flex flex-col items-center text-xs text-brand-gray-dark hover:text-brand-blue">
+          <span className="material-icons" style={{ fontSize: 24 }}>
+            info
+          </span>
+          Cómo funciona
+        </a>
+        <a
+          href="#diagnostics"
+          className="flex flex-col items-center text-xs text-brand-gray-dark hover:text-brand-blue">
+          <span className="material-icons" style={{ fontSize: 24 }}>
+            build
+          </span>
+          Diagnóstico
+        </a>
+        <a
+          href="#testimonials"
+          className="flex flex-col items-center text-xs text-brand-gray-dark hover:text-brand-blue">
+          <span className="material-icons" style={{ fontSize: 24 }}>
+            star
+          </span>
+          Opiniones
+        </a>
+        <a
+          href="#contact"
+          className="flex flex-col items-center text-xs text-brand-gray-dark hover:text-brand-blue">
+          <span className="material-icons" style={{ fontSize: 24 }}>
+            call
+          </span>
+          Contacto
+        </a>
+      </nav>
+
       <Footer />
       <Chatbox />
     </div>
