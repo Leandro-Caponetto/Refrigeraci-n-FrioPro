@@ -73,7 +73,7 @@ const Chatbox = () => {
   return (
     <>
       <div
-        className={`fixed bottom-0 right-0 m-6 z-50 transition-transform duration-300 ${
+        className={`fixed bottom-10 right-0 m-6 z-50 transition-transform duration-300 ${
           isOpen ? "translate-x-24 opacity-0" : "translate-x-0 opacity-100"
         }`}>
         <button
