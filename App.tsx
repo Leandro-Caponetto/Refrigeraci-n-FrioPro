@@ -29,7 +29,7 @@ function App() {
         {/* <WhatsAppButton /> */}
       </main>
 
-      {/* Barra inferior tipo app solo en móvil */}
+      {/* Barra inferior tipo app y Chatbox solo en móvil */}
       <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-lg flex justify-around items-center py-2 md:hidden z-50">
         <a
           href="#features"
@@ -125,8 +125,8 @@ function App() {
           Contacto
         </a>
       </nav>
-      {/* Chatbox subido para no tapar la barra */}
-      <div className="mb-40 md:mb-0">
+
+      <div className="block md:hidden mb-40">
         <Chatbox />
       </div>
 
