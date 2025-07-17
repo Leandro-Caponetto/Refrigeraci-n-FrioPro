@@ -26,7 +26,7 @@ function App() {
         <Testimonials />
         <OpinionesCarrusel />
         <Contact />
-        <WhatsAppButton />
+        {/* <WhatsAppButton /> */}
       </main>
       <Footer />
       <Chatbox />

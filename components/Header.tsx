@@ -42,10 +42,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3">
             {/* <LogoIcon className="h-8 w-8 text-brand-blue-dark" /> */}
-            <p className="text-4xl md:text-5xl">❄️</p>
-            <span className="text-2xl font-bold text-brand-gray-dark">
-              FríoPro
-            </span>
+            <p className="text-2xl md:text-5xl">❄️</p>
+            <p className="text-2xl font-bold text-brand-gray-dark">
+              Frío
+              <span className="bg-brand-blue-dark text-white rounded-lg">
+                Pro
+              </span>
+            </p>
           </a>
           <nav className="hidden md:flex items-center space-x-8">
             <NavLink href="#features">Características</NavLink>
