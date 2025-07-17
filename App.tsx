@@ -126,7 +126,7 @@ function App() {
         </a>
       </nav>
 
-      <div className="block md:hidden mb-40">
+      <div className="mb-40 md:mb-0">
         <Chatbox />
       </div>
 

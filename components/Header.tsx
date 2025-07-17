@@ -85,18 +85,6 @@ const Header = () => {
               />
             </svg>
           </button>
-          {/* Icono de chatbox solo en móvil */}
-          <button
-            className="md:hidden ml-2 p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition"
-            aria-label="Abrir chat"
-            onClick={() => {
-              /* tu lógica para abrir el chatbox */
-            }}>
-            {/* chatbox icon SVG */}
-            <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
-          </button>
         </div>
       </div>
       {/* Mobile Menu */}
