@@ -125,7 +125,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="_next"
-                value={"https://refrigeraci-n-frio-pro.vercel.app/"}
+                value={"https://refrigeraci-n-frio-pro.vercel.app"}
               />
               <input type="hidden" name="_captcha" value={"false"} />
             </div>
