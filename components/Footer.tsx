@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import { LogoIcon } from "./IconComponents";
 
 const Footer = () => {
   return (
@@ -11,11 +10,11 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-4">
               {/* <LogoIcon className="h-8 w-8 text-brand-blue-dark" /> */}
-              <p className="text-2xl md:text-5xl">❄️</p>
+
               <p className="text-2xl font-bold text-brand-gray">
-                Frío
+                ❄️Frío
                 <span
-                  className=" text-white rounded-lg"
+                  className=" text-white rounded-lg text-lg px-1 py-1"
                   style={{ backgroundColor: "#fda17a" }}>
                   Pro
                 </span>

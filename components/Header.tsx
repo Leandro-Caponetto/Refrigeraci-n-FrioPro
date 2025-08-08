@@ -42,11 +42,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3">
             {/* <LogoIcon className="h-8 w-8 text-brand-blue-dark" /> */}
-            <p className="text-2xl md:text-5xl">❄️</p>
+
             <p className="text-2xl font-bold text-brand-gray-dark">
-              Frío
+              ❄️Frío
               <span
-                className=" text-white rounded-lg"
+                className=" text-white rounded-lg text-lg px-1 py-1"
                 style={{ backgroundColor: "#fda17a" }}>
                 Pro
               </span>
@@ -114,27 +114,27 @@ const Header = () => {
       {/* Info Popup Modal */}
       {showInfo && (
         <div
-          className="fixed inset-0 z-50 grid place-items-center bg-black/40"
+          className="bg-brand-gray-dark fixed inset-0 z-50 grid place-items-center bg-black/40"
           onClick={() => setShowInfo(false)}>
           <div
-            className="bg-white rounded-2xl shadow-2xl p-12 max-w-lg w-full relative flex flex-col items-center mx-2 border-2 border-white-600 rounded-xl"
+            className="bg-brand-gray-dark rounded-2xl shadow-2xl p-12 max-w-lg w-full relative flex flex-col items-center mx-2 rounded-xl"
             style={{ minHeight: "320px" }}
             onClick={(e) => e.stopPropagation()}>
             <h2 className="text-2xl font-bold text-brand-blue text-center mb-2">
               Info
             </h2>
-            <div className="bg-brand-gray-light p-2 rounded-2xl shadow-2xl mb-2 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
-              <p className="text-2xl font-bold text-brand-gray-dark  text-center">
-                ❄️ Frío
+            <div className="bg-brand-gray-light p-2 rounded-2xl shadow-[0_4px_10px_rgba(173,216,230,0.5)] mb-2 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
+              <p className="text-2xl font-bold text-brand-gray-dark text-center">
+                ❄️Frío
                 <span
-                  className="bg-brand-blue-dark text-white rounded-lg"
+                  className="text-white rounded-lg text-lg px-1 py-1"
                   style={{ backgroundColor: "#fda17a" }}>
                   Pro
                 </span>
               </p>
             </div>
 
-            <div className="bg-brand-gray-light  mb-2 rounded-2xl shadow-2xl p-6 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
+            <div className="bg-brand-gray-light mb-2 rounded-2xl shadow-[0_4px_10px_rgba(173,216,230,0.5)] p-6 text-lg w-full text-center mx-2 border-2 border-white-100 rounded-xl">
               <div className="mb-4 text-lg w-full text-center">
                 <span className="font-semibold">☎️ Teléfono:</span>{" "}
                 <a href="tel:1161691727" className="text-brand-blue underline">
@@ -150,6 +150,7 @@ const Header = () => {
                 </a>
               </div>
             </div>
+
             <button
               onClick={() => setShowInfo(false)}
               className="mt-2 bg-brand-blue text-white font-bold py-2 px-8 rounded-lg shadow-2xl hover:bg-brand-blue-dark transition-all duration-300 "
