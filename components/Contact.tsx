@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Contact = () => {
   const [name, setName] = useState("");
