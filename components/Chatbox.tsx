@@ -94,7 +94,17 @@ const Chatbox = () => {
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b border-brand-gray-light bg-brand-gray-light/50 rounded-t-2xl">
           <h3 className="font-bold text-lg text-brand-gray-dark">
-            <span className="text-brand-blue">Asistente</span> ❄️ FríoPro
+            <div className="flex items-center space-x-2">
+              <p className="text-brand-blue m-0">Asistente</p>
+              <p className="text-xl font-bold text-brand-gray-dark m-0">
+                ❄️Frío
+                <span
+                  className="text-lg text-white rounded-lg px-1 py-1 "
+                  style={{ backgroundColor: "#fda17a" }}>
+                  Pro
+                </span>
+              </p>
+            </div>
           </h3>
           <button
             onClick={() => setIsOpen(false)}
@@ -113,7 +123,9 @@ const Chatbox = () => {
                   msg.role === "user" ? "justify-end" : "justify-start"
                 }`}>
                 {msg.role === "model" && (
-                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-brand-gray-dark flex items-center justify-center text-white font-bold text-sm">
+                  <div
+                    className="flex-shrink-0 h-8 w-8 rounded-full flex items-center justify-center text-white font-bold text-xl"
+                    style={{ backgroundColor: "#2ab9f1ff" }}>
                     🤖
                   </div>
                 )}

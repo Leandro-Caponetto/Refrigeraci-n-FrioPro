@@ -46,7 +46,7 @@ const Header = () => {
             <p className="text-2xl font-bold text-brand-gray-dark">
               ❄️Frío
               <span
-                className=" text-white rounded-lg text-lg px-1 py-1"
+                className="text-lg text-white rounded-lg px-1 py-1"
                 style={{ backgroundColor: "#fda17a" }}>
                 Pro
               </span>
