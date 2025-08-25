@@ -12,6 +12,7 @@ import Chatbox from "./components/Chatbox";
 import Contact from "./components/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
 import OpinionesCarrusel from "./components/OpinionesCarrusel";
+import ScrollingTechnician from './components/ScrollingTechnician';
 import {
   FaRegListAlt,
   FaQuestionCircle,
@@ -44,6 +45,7 @@ function App() {
         <OpinionesCarrusel />
         <Contact />
         {/* <WhatsAppButton /> */}
+        <ScrollingTechnician />
       </main>
 
       {/* Barra inferior tipo app y Chatbox solo en móvil */}
